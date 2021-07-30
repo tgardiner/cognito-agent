@@ -1,6 +1,6 @@
 {
   "name": "cognito-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authenticate with AWS Cognito and retreive credentials to use in your environment",
   "main": "index.js",
   "bin": {

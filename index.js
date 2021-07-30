@@ -41,9 +41,10 @@ const {
         }
       });
 
-      AWS.config.credentials.refresh(async (error) => {
+      AWS.config.credentials.refresh( error => {
         if (error) {
           console.error(error);
+          process.exit(1);
         } else {
           console.log(`AWS_DEFAULT_REGION=${AWS.config.region}; export AWS_DEFAULT_REGION;`);
           console.log(`AWS_ACCESS_KEY_ID=${AWS.config.credentials.accessKeyId}; export AWS_ACCESS_KEY_ID;`);
@@ -54,6 +55,7 @@ const {
     },
     onFailure: function (err) {
       console.error(err.message || JSON.stringify(err));
+      process.exit(1);
     }
   });
 })();
