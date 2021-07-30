@@ -1,0 +1,38 @@
+{
+  "name": "cognito-agent",
+  "version": "1.0.0",
+  "description": "Authenticate with AWS Cognito and retreive credentials to use in your environment",
+  "main": "index.js",
+  "bin": {
+    "cognito-agent": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "semistandard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgardiner/cognito-agent.git"
+  },
+  "keywords": [
+    "aws",
+    "amplify",
+    "cognito",
+    "awscurl",
+    "sigv4"
+  ],
+  "author": "Tom Gardiner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgardiner/cognito-agent/issues"
+  },
+  "homepage": "https://github.com/tgardiner/cognito-agent#readme",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.0.6",
+    "aws-sdk": "^2.957.0",
+    "cli-ux": "^5.6.3"
+  },
+  "devDependencies": {
+    "semistandard": "^16.0.1"
+  }
+}
